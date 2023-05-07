@@ -25,6 +25,8 @@ TEST_CASE("Numeros romanos - algarismos únicos", "[romanos]") {
 
     REQUIRE(romanos_para_decimal("XX") == 20);
 
+    REQUIRE(romanos_para_decimal("XXI") == 21);
+
     REQUIRE(romanos_para_decimal("XXX") == 30);
 
     REQUIRE(romanos_para_decimal("XXX") == 40);
