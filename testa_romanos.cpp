@@ -55,5 +55,7 @@ TEST_CASE("Numeros romanos - algarismos inválidos", "[romanos]") {
     REQUIRE(romanos_para_decimal("Y") == -1);
 
     REQUIRE(romanos_para_decimal("LL") == -1);
+
+    REQUIRE(romanos_para_decimal("DD") == -1);
 }
 
