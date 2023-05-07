@@ -9,6 +9,8 @@ TEST_CASE("Numeros romanos - algarismos únicos", "[romanos]") {
 
     REQUIRE(romanos_para_decimal("II") == 2);
 
+    REQUIRE(romanos_para_decimal("III") == 2);
+
     REQUIRE(romanos_para_decimal("IV") == 4);
 
     REQUIRE(romanos_para_decimal("V") == 5);
@@ -47,6 +49,8 @@ TEST_CASE("Numeros romanos - algarismos inválidos", "[romanos]") {
     REQUIRE(romanos_para_decimal("O") == -1);
 
     REQUIRE(romanos_para_decimal("A") == -1);
+
+    REQUIRE(romanos_para_decimal("VV") == -1);
 
     REQUIRE(romanos_para_decimal("Y") == -1);
 }
