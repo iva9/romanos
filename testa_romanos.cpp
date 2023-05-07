@@ -1,7 +1,7 @@
-Copyright[2023] <Ivanov M. Santos>
+//Copyright[2023] <Ivanov M. Santos>
 #define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() (only cpp)
-#include "../catch.hpp"
-#include "../romanos.hpp"
+#include "catch.hpp"
+#include "romanos.hpp"
 
 
 TEST_CASE("Numeros romanos - algarismos únicos", "[romanos]") {
@@ -9,7 +9,7 @@ TEST_CASE("Numeros romanos - algarismos únicos", "[romanos]") {
 
     REQUIRE(romanos_para_decimal("II") == 2);
 
-    REQUIRE(romanos_para_decimal("III") == 2);
+    REQUIRE(romanos_para_decimal("III") == 3);
 
     REQUIRE(romanos_para_decimal("IV") == 4);
 
