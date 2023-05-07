@@ -7,6 +7,8 @@ Copyright[2023] <Ivanov M. Santos>
 TEST_CASE("Numeros romanos - algarismos únicos", "[romanos]") {
     REQUIRE(romanos_para_decimal("I") == 1);
 
+    REQUIRE(romanos_para_decimal("IV") == 4);
+
     REQUIRE(romanos_para_decimal("V") == 5);
 
     REQUIRE(romanos_para_decimal("VI") == 6);
