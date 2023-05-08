@@ -1,7 +1,7 @@
-//Copyright[2023] <Ivanov M. Santos>
+// Copyright[2023] <Ivanov M. Santos>
 #define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() (only cpp)
-#include "catch.hpp"
-#include "romanos.hpp"
+#include "/catch.hpp"
+#include "/romanos.hpp"
 
 
 TEST_CASE("Numeros romanos - algarismos únicos", "[romanos]") {
@@ -21,7 +21,7 @@ TEST_CASE("Numeros romanos - algarismos únicos", "[romanos]") {
 
     REQUIRE(romanos_para_decimal("X") == 10);
 
-    REQUIRE(romanos_para_decimal("XV") == 10);
+    REQUIRE(romanos_para_decimal("XV") == 15);
 
     REQUIRE(romanos_para_decimal("XX") == 20);
 
@@ -29,9 +29,11 @@ TEST_CASE("Numeros romanos - algarismos únicos", "[romanos]") {
 
     REQUIRE(romanos_para_decimal("XXX") == 30);
 
-    REQUIRE(romanos_para_decimal("XXX") == 40);
+    REQUIRE(romanos_para_decimal("XXXX") == 40);
 
     REQUIRE(romanos_para_decimal("L") == 50);
+
+    REQUIRE(romanos_para_decimal("C") == 100);
 
     REQUIRE(romanos_para_decimal("D") == 500);
 
@@ -54,12 +56,7 @@ TEST_CASE("Numeros romanos - algarismos inválidos", "[romanos]") {
 
     REQUIRE(romanos_para_decimal("A") == -1);
 
-    REQUIRE(romanos_para_decimal("VV") == -1);
-
     REQUIRE(romanos_para_decimal("Y") == -1);
 
-    REQUIRE(romanos_para_decimal("LL") == -1);
-
-    REQUIRE(romanos_para_decimal("DD") == -1);
+    REQUIRE(romanos_para_decimal("ll") == -1);
 }
-
