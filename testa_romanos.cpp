@@ -1,7 +1,7 @@
 // Copyright[2023] <Ivanov M. Santos>
 #define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() (only cpp)
-#include "/catch.hpp"
-#include "/romanos.hpp"
+#include "catch.hpp"
+#include "romanos.hpp"
 
 
 TEST_CASE("Numeros romanos - algarismos únicos", "[romanos]") {
